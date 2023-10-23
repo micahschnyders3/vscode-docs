@@ -1,85 +1,18 @@
----
-Order: 2
-Area: languages
-TOCTitle: JavaScript
-ContentId: F54BB3D4-76FB-4547-A9D0-F725CEBB905C
-PageTitle: JavaScript Programming with Visual Studio Code
-DateApproved: 10/4/2023
-MetaDescription: Get the best out of Visual Studio Code for JavaScript development
----
+<html>
+<Head>
+    <Title> Rent the theatre at riverside arts center> <title>
+    Body:
+    Font-Family: 'Times new roman'
+    margin-left 20%
+    margin-right 20%
+    background-color
+    boarder: gray dashed
+    Padding: 5px---
 
-# JavaScript in Visual Studio Code
-
-Visual Studio Code includes built-in JavaScript IntelliSense, debugging, formatting, code navigation, refactorings, and many other advanced language features.
-
-![Working with JavaScript in Visual Studio Code](images/javascript/overview.png)
-
-Most of these features just work out of the box, while some may require basic configuration to get the best experience. This page summarizes the JavaScript features that VS Code ships with. Extensions from the [VS Code Marketplace](https://marketplace.visualstudio.com) can augment or change most of these built-in features. For a more in-depth guide on how these features work and can be configured, see [Working with JavaScript](/docs/nodejs/working-with-javascript.md).
-
-## IntelliSense
-
-IntelliSense shows you intelligent code completion, hover information, and signature information so that you can write code more quickly and correctly.
-
-<video src="images/javascript/intellisense.mp4" placeholder="images/javascript/intellisense-placeholder.png" autoplay loop controls muted>
-    Sorry, your browser doesn't support HTML 5 video.
-</video>
-
-VS Code provides IntelliSense within your JavaScript projects; for many npm libraries such as `React`, `lodash`, and `express`; and for other platforms such as `node`, serverless, or IoT.
-
-See [Working with JavaScript](/docs/nodejs/working-with-javascript.md) for information about VS Code's JavaScript IntelliSense, how to configure it, and help troubleshooting common IntelliSense problems.
-
-## JavaScript projects (jsconfig.json)
-
-A [jsconfig.json](/docs/languages/jsconfig.md) file defines a JavaScript project in VS Code. While `jsconfig.json` files are not required, you will want to create one in cases such as:
-
-* If not all JavaScript files in your workspace should be considered part of a single JavaScript project. `jsconfig.json` files let you exclude some files from showing up in IntelliSense.
-* To ensure that a subset of JavaScript files in your workspace is treated as a single project. This is useful if you are working with legacy code that uses implicit globals dependencies instead of `imports` for dependencies.
-* If your workspace contains more than one project context, such as front-end and back-end JavaScript code. For multi-project workspaces, create a `jsconfig.json` at the root folder of each project.
-* You are using the TypeScript compiler to down-level compile JavaScript source code.
-
-To define a basic JavaScript project, add a `jsconfig.json` at the root of your workspace:
-
-```json
-{
-    "compilerOptions": {
-        "module": "commonjs",
-        "target": "es6"
-    },
-    "exclude": [
-        "node_modules"
-    ]
-}
-```
-
-See [Working with JavaScript](/docs/nodejs/working-with-javascript.md) for more advanced `jsconfig.json` configuration.
-
-> **Tip:** To check if a JavaScript file is part of JavaScript project, just open the file in VS Code  and run the **JavaScript: Go to Project Configuration** command. This command opens the `jsconfig.json` that references the JavaScript file. A notification is shown if the file is not part of any `jsconfig.json` project.
-
-## Snippets
-
-VS Code includes basic JavaScript [snippets](/docs/editor/userdefinedsnippets.md) that are suggested as you type;
-
-<video src="images/javascript/snippets.mp4" placeholder="images/javascript/snippets-placeholder.png" autoplay loop controls muted>
-    Sorry, your browser doesn't support HTML 5 video.
-</video>
-
-There are many extensions that provide additional snippets, including snippets for popular frameworks such as Redux or Angular. You can even [define your own snippets](/docs/editor/userdefinedsnippets.md).
-
-> **Tip**: To disable snippets suggestions, set `editor.snippetSuggestions` to `"none"` in your [settings](/docs/getstarted/settings.md) file. The `editor.snippetSuggestions` setting also lets you change where snippets appear in the suggestions: at the top (`"top"`), at the bottom (`"bottom"`), or inlined ordered alphabetically (`"inline"`). The default is `"inline"`.
-
-## JSDoc support
-
-VS Code understands many standard [JSDoc](https://jsdoc.app) annotations, and uses these annotations to provide rich [IntelliSense](#intellisense). You can optionally even use the type information from JSDoc comments to [type check your JavaScript](#type-checking).
-
-<video src="images/javascript/jsdoc-autofill.mp4" placeholder="images/javascript/jsdoc-autofill-placeholder.png" autoplay loop controls muted>
-    Sorry, your browser doesn't support HTML 5 video.
-</video>
-
-Quickly create JSDoc comments for functions by typing `/**` before the function declaration, and select the **JSDoc comment** snippet suggestion:
-
-<video src="images/javascript/jsdoc-autofill.mp4" placeholder="images/javascript/jsdoc-autofill-placeholder.png" autoplay loop controls muted>
-    Sorry, your browser doesn't support HTML 5 video.
-</video>
+<style>
+<Head>
+<Body>
+<P>: The theatre can be rented for any performance or event with a capacity for 153 people. 
 
 To disable JSDoc comment suggestions, set `"javascript.suggest.completeJSDocs": false`.
 
